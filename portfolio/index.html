@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lee Hoseong</title>
+
+
+
+    <!-- jquery -->
+    <script src="plugIn/jquery-3.6.0.js"></script>
+
+    <!-- gsap -->
+    <script src="plugIn/gsap.min.js"></script>
+    <script src="plugIn/ScrollTrigger.min.js"></script>
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="plugIn/swiper.css">
+    <script src="plugIn/swiper.js"></script>
+
+    <!-- googleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Oswald:wght@200;300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- custom css,js -->
+    <script src="js/index.js"></script>
+    <script src="js/gsap.js"></script>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/pc.css">
+    <link rel="stylesheet" href="css/tab.css">
+    <link rel="stylesheet" href="css/mobile1.css">
+    <link rel="stylesheet" href="css/mobile2.css">
+    <link rel="stylesheet" href="css/mobile3.css">
+
+
+
+</head>
+<body>
+
+
+
+    <!-- intro -->
+    <!-- <p id="intro">LEE HOSEONG</p> -->
+
+
+
+    <!-- menu -->
+    <ul id="menu" class="intro">
+        <li><a href="#" class="mainText">MAIN</a></li>
+        <li><a href="#sec2" class="mainText" id="info">INFO</a></li>
+        <li><a href="#sec3" class="mainText" id="work">WORK</a></li>
+        <li><a href="#footer" class="mainText" id="contact">CONTACT</a></li>
+    </ul>
+    <p id="welcome" class="intro mainText">WELCOME!</p>
+    <p id="twotwo" class="intro mainText">© 2022</p>
+
+
+
+    <!-- mobile2_menu -->
+    <div class="mobile2_menu intro" id="mobile_welcome">
+        <p>© 2022</p>
+    </div>
+    <div class="mobile2_menu intro" id="mobile_menudot">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="mobile2_menubox">
+        <div>
+            <a href="#">MAIN</a>
+            <a href="#sec2">INFO</a>
+            <a href="#sec3">WORK</a>
+            <a href="#footer">CONTACT</a>
+        </div>
+        <p>© 2022</p>
+    </div>
+
+
+
+    <!-- wrap -->
+    <div id="wrap" class="intro">
+
+
+
+        <!-- sec1 -->
+        <section id="sec1">
+        
+            <div class="face_img ">
+                <img src="img/main/main1.png" alt="main">
+            </div>
+            <div class="text_img img1 main_black">
+                <img src="img/main/work.png" alt="work">
+                <img src="img/main/hard.png" alt="hard">
+            </div>
+            <div class="text_img img2 main_black">
+                <img class="sec1_simple" src="img/main/simple.png" alt="simple">
+            </div>
+            <div class="text_img img1 main_white">
+                <img src="img/main/work_ffffff.png" alt="work">
+                <img src="img/main/hard_ffffff.png" alt="hard">
+            </div>
+            <div class="text_img img2 main_white">
+                <img class="sec1_simple" src="img/main/simple_ffffff.png" alt="simple">
+            </div>
+        
+        <!-- /sec1 -->
+        </section>
+
+
+
+        <!-- sec2 -->
+        <section id="sec2">
+            
+            <div class="align sec2_align">
+                <p class="sec2_big"><span>체력, 근성 그리고 센스</span></p>
+                <P class="sec2_big">만나서 반갑습니다. 지치지 않는 근성으로 센스있게 생각하고 행동하며 실패를 경험삼아 저의 한계점을 돌파해나가는  신입 웹 퍼블리셔 <span>이호성</span>입니다. </P>
+                <p class="sec2_big sec2_margin">직접 만든 웹사이트를 흐뭇하게 보고 있는 저의 모습에서 코딩에 흥미를 가지게 되었습니다. <span>웹 퍼블리셔로 시작해</span> 어깨너머로 배워 <span>프론트엔드 개발자가 되는 것</span>이 목표입니다.</p>
+            
+                <div class="sec2_small">
+                    <div>
+                        <div class="smallbox">
+                            <p>Experience History</p>
+                            <p>신한양 직업전문학교 JAVA 백엔드 과정 수료</p>
+                            <p>MGH 프렌차이즈 주식회사 메뉴앱 프로젝트 참가</p>
+                            <p>메가스터디 컴퓨터 아카데미 웹디자인 과정 수료</p>
+                        </div>
+                        <div class="smallbox">
+                            <p>License i have</p>
+                            <p>1종 보통 운전면허증</p>
+                            <p>웹 디자인 기능사 <span class="sec2_planText">실기 응시예정</span></p>
+                            <p>컴퓨터 그래픽스 운용기능사 <span class="sec2_planText">필기 응시예정</span></p>
+                        </div>
+                    </div>
+                    <div class="smallbox skillText">
+                        <p>What can l do ?</p>
+                        <div class="skillbox">
+                            <p>Html 5</p>
+                            <div>
+                                <div id="html" class="white"></div>
+                            </div>
+                        </div>
+                        <div class="skillbox">
+                            <p>Css 3</p>
+                            <div>
+                                <div id="css" class="white"></div>
+                            </div>
+                        </div>
+                        <div class="skillbox">
+                            <p>Jquery</p>
+                            <div>
+                                <div id="jquery" class="white"></div>
+                            </div>
+                        </div>
+                        <div class="skillbox">
+                            <p>JavaScript</p>
+                            <div>
+                                <div id="javascript" class="white"></div>
+                            </div>
+                        </div>
+                        <div class="skillbox">
+                            <p>figma</p>
+                            <div>
+                                <div id="figma" class="white"></div>
+                            </div>
+                        </div>
+                        <div class="skillbox">
+                            <p id="mobile3_size">Photoshop</p>
+                            <div>
+                                <div id="ps" class="white"></div>
+                            </div>
+                        </div>
+                        <div class="skillbox">
+                            <p>Illustrator</p>
+                            <div>
+                                <div id="ai" class="white"></div>
+                            </div>
+                        </div>
+                        <div class="skillbox">
+                            <p>React</p>
+                            <div>
+                                <div id="react" class="white"></div>
+                            </div>
+                        </div>
+                        <div class="skillbox">
+                            <p>Vue</p>
+                            <div>
+                                <div id="vue" class="white"></div>
+                            </div>
+                        </div>
+                        <div class="skillbox" id="native_none">
+                            <p>React native</p>
+                            <div>
+                                <div id="react_native" class="white"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- /sec2 -->
+        </section>
+
+
+
+        <!-- sec3 -->
+        <section id="sec3">
+
+            <div id="sec3_work">
+                <img src="img/work/work_work.png" alt="work_work">
+            </div>
+
+            <div class="mobile_workImg">
+                <img src="img/work/work_work.png" alt="work_work">
+            </div>
+
+            <div class="align sec3_align">
+                <div class="sec3__div" id="bens">
+                    <div class="sec3__div-info">
+                        <div class="sec3_div-infoflex">
+                            <p class="sec3__div-info-title">BENS</p>
+                            <p class="sec3__div-info-text">프리미엄 가구 쇼핑몰 리뉴얼 사이트,<br>편안한 색상과 깔끔한 레이아웃이 특징입니다.</p>
+                            <p class="sec3__div-info-skill">반응형 . 디자인&퍼블리싱 . 4일 소요</p>
+                            <div class="sec3__div-info-btnbox">
+                                <a href="#" class="sec3__div-info-btn">CODE VIEW</a>
+                                <a href="http://summitweb.co.kr/mega/lhs/bens/index.html" target='blank' class="sec3__div-info-btn">SITE VIEW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <video class="sec3__div-video" src="img/work/bens.mp4" alt="bens" muted autoplay loop>
+                </div>
+                <div class="sec3__div" id="goodTravel">
+                    <div class="sec3__div-info">
+                        <div class="sec3_div-infoflex">
+                            <p class="sec3__div-info-title">참좋은여행</p>
+                            <p class="sec3__div-info-text">전세계 아름다운 여행지 소개사이트,<br>친근한 분위기와 시원한 레이아웃이 특징입니다.</p>
+                            <p class="sec3__div-info-skill">반응형 . 디자인&퍼블리싱 . 4일 소요</p>
+                            <div class="sec3__div-info-btnbox">
+                                <a href="#" class="sec3__div-info-btn">CODE VIEW</a>
+                                <a href="http://summitweb.co.kr/mega/lhs/goodTravel/index.html" target='blank' class="sec3__div-info-btn">SITE VIEW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <video class="sec3__div-video" src="img/work/goodtravel.mp4" alt="goodtravel" muted autoplay loop>
+                </div>
+                <div class="sec3__div" id="vogueKorea">
+                    <div class="sec3__div-info">
+                        <div class="sec3_div-infoflex">
+                            <p class="sec3__div-info-title">VOGUE KOREA</p>
+                            <p class="sec3__div-info-text">세계적으로 유명한 패션 잡지 사이트,<br>세련된 분위기와 눈에 띄는 컨텐츠가 특징입니다.</p>
+                            <p class="sec3__div-info-skill">반응형 . 디자인&퍼블리싱 . 3일 소요</p>
+                            <div class="sec3__div-info-btnbox">
+                                <a href="#" class="sec3__div-info-btn">CODE VIEW</a>
+                                <a href="http://summitweb.co.kr/mega/lhs/vogueKorea/index.html" target='blank' class="sec3__div-info-btn">SITE VIEW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <video class="sec3__div-video" src="img/work/voguekorea.mp4" alt="voguekorea" muted autoplay loop>
+                </div>
+            </div>
+
+        <!-- /sec3 -->
+        </section>
+
+
+
+        <!-- footer -->
+        <footer id="footer">
+
+            <a href="https://github.com/rkzk1004/personal_portfolio" target="blank" id="github">
+                <img src="img/footer/github.png" alt="github">
+            </a>
+            <p>LEE HOSEONG</p>
+            <p>010 . 8007 . 6174</p>
+            <p>rkzk1004 @ naver . com</p>
+            <p>Copyright © 2022 Lee, Ho-Seong. All Rights Reserved.</p>
+
+        <!-- /footer -->
+        </footer>
+
+
+
+    <!-- wrap/> -->
+    </div>
+
+
+
+    <!-- plugIn -->
+    <script>
+
+
+
+        // gsap__scrolltrigger
+        gsap.registerPlugin(ScrollTrigger)
+
+
+
+        // swiper
+        var swiper = new Swiper(".sec3_slider", {
+            speed:1300,
+            autoplay:{
+                delay: 3000,
+                disableOnInteraction: false,
+            }
+        });
+       
+
+
+    </script>
+
+
+
+</body>
+</html>

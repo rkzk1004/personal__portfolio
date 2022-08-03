@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 취향 공간, 벤스</title>
+
+
+
+    <!-- jquery -->
+    <script src="plugIn/jquery-3.6.0.js"></script>
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="plugIn/swiper.css">
+    <script src="plugIn/swiper.js"></script>
+
+    <!-- custom css,js -->
+    <link rel="stylesheet" href="css/defalut.css">
+    <link rel="stylesheet" href="css/pc.css">
+    <link rel="stylesheet" href="css/tab.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/mobile2.css">
+    <script src="js/index.js"></script>
+
+    <!-- googleFont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Playfair+Display&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div class="align header">
+                <div class="header_img">
+                    <img src="img/logo/bens.png" alt="logo">
+                </div>
+                <ul class="header_menu">
+                    <li class="header_mainmenu"><a href="#">SHOP</a>
+                        <ul class="header_submenu">
+                            <li><a href="#">거실가구</a></li>
+                            <li><a href="#">침실가구</a></li>
+                            <li><a href="#">주방가구</a></li>
+                            <li><a href="#">서재/수납</a></li>
+                            <li><a href="#">세일&amp;이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li class="header_mainmenu"><a href="#">CURATION</a></li>
+                    <li class="header_mainmenu"><a href="#">ABOUT US</a></li>
+                    <li class="header_mainmenu"><a href="#">STORE</a></li>
+                    <li class="header_mainmenu"><a href="#">COMMUNITY</a>
+                        <ul class="header_submenu">
+                            <li><a href="#">NOTICE</a></li>
+                            <li><a href="#">REVIEW</a></li>
+                            <li><a href="#">Q&A</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="header_right">
+                    <p>Login</p>
+                    <p>Join</p>
+                    <img src="img/icon/search1.png" alt="search" id="searchbtn">
+                </div>
+                <div class="header_menubtn">
+                    <img id="menubtn" src="img/icon/menu.png" alt="menu">
+                </div>
+            </div>
+        </header>
+
+
+
+        <!-- header_pc_search -->
+        <div id="header_search">
+            <div class="align">
+                <div id="search_cancel">
+                    <img src="img/icon/cancel.png" alt="cancel" id="cancelbtn">
+                </div>
+                <div id="search_inputbox">
+                    <p>인기검색어</p>
+                    <span>#Blen</span><span>#Herman</span><span>#Desento</span><span>#Norman</span>
+                    <input type="search" placeholder="제품명을 입력해주세요">
+                    <img src="img/icon/search1.png" alt="search1">
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- header_tab,mobile_search -->
+        <div id="tab_menucon">
+            <div class="tab_menualign tab_topmenu">
+                <p>LOGIN</p>
+                <p>JOIN</p>
+                <p>BRAND</p>
+                <div class="cancelbtn">
+                    <img class="cancelbtn" src="img/icon/cancel_white.png" alt="cancel_white">
+                </div>
+            </div>
+            <ul class="tab_menualign tabs">
+                <li class="tab">
+                    <input type="radio" id="tab_1" name="tab_midmenu" checked>
+                    <label for="tab_1">CATEGORY</label>
+                    <div class="content tab_1_content">
+                        <ul class="tab1_menu">
+                            <li class="tab1_main tab1_main1"><p>SHOP</p><img class="subopen" src="img/icon/down_white.png" alt="down_white">
+                                <ul class="tab1_sub" id="tab1_sub1">
+                                    <li><a href="#">거실가구</a></li>
+                                    <li><a href="#">침실가구</a></li>
+                                    <li><a href="#">주방가구</a></li>
+                                    <li><a href="#">서재/수납</a></li>
+                                    <li><a href="#">세일&amp;이벤트</a></li>
+                                </ul>
+                            </li>
+                            <li class="tab1_main"><p>CURATION</p></li>
+                            <li class="tab1_main"><p>ABOUT US</p></li>
+                            <li class="tab1_main"><p>STORE</p></li>
+                            <li class="tab1_main tab1_main2"><p>COMMUNITY</p><img class="subopen" src="img/icon/down_white.png" alt="down_white">
+                                <ul class="tab1_sub" id="tab1_sub2">
+                                    <li><a href="#">NOTICE</a></li>
+                                    <li><a href="#">REVIEW</a></li>
+                                    <li><a href="#">Q&amp;A</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="tab">
+                    <input type="radio" id="tab_2" name="tab_midmenu">
+                    <label for="tab_2">SEARCH</label>
+                    <div class="content tab_2_content">
+                        <div class="tab_2_box">
+                            <span>인기검색어</span>
+                            <div class="tab_2_popularbox">
+                                <span><a href="#">#Blen</a></span>
+                                <span><a href="#">#Herman</a></span>
+                                <span><a href="#">#Decento</a></span>
+                                <span><a href="#">#Norman</a></span>
+                            </div>
+                            <div class="tab_2_input">
+                                <input type="text" placeholder="제품명을 입력해주세요">
+                                <img src="img/icon/search1.png" alt="search1">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+
+        <!-- sec1 -->
+        <div id="sec1">
+            <div class="swiper sec1_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide sec1_slide">
+                        <div class="sec1_con">
+                            <img src="img/mainSlider/main1.jpg" alt="main1">
+                            <div class="sec1_box">
+                                <div class="sec1_text">
+                                    <h1>새롭게 휴식을 디자인하다</h1>
+                                    <p>섬세한 라인, 프리미엄 모던 디자인</p>
+                                    <button>MORE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide sec1_slide">
+                        <div class="sec1_con">
+                            <img src="img/mainSlider/main2.jpg" alt="main1">
+                            <div class="sec1_box">
+                                <div class="sec1_text">
+                                    <h1>편안함을 보다 폭넓게</h1>
+                                    <p>벤스만의 깔끔하고 다채로운 편안함</p>
+                                    <button>MORE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide sec1_slide">
+                        <div class="sec1_con">
+                            <img src="img/mainSlider/main3.jpg" alt="main1">
+                            <div class="sec1_box">
+                                <div class="sec1_text">
+                                    <h1>행복과 이야기를 만드는 가구</h1>
+                                    <p>신혼때 처음 장만한 침대, 내 아이가 처음 책을 본 책상</p>
+                                    <button>MORE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="sec1_arrow">
+                    <div class="sec1_prev">
+                        <img src="img/icon/left.png" alt="">
+                    </div>
+                    <div class="sec1_next">
+                        <img src="img/icon/right.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+
+
+        <!-- sec2 -->
+        <div id="sec2">
+            <div class="align" id="sec2_align">
+                <h1 id="sec2_h1">BEST COLLECTION</h1>
+                <p id="sec2_p">매달 선정하는 베스트 카테고리</p>
+                <div class="swiper sec2_swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide sec2_slide">
+                            <div class="sec2_slideimgbox">
+                                <div class="sec2_slidehover">
+                                    <div>
+                                        <div class="sec2_btn">
+                                            <img src="img/icon/heart.png" alt="">
+                                        </div>
+                                        <div class="sec2_btn">
+                                            <img src="img/icon/cart.png" alt="">
+                                        </div>
+                                        <div class="sec2_btn">
+                                            <img src="img/icon/search2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>BEST 1</p>
+                                <img src="img/products/sec2_1.jpg" alt="sec2">
+                            </div>
+                            <p>엘리아 T1 501 퀸 침대</p>
+                            <p>함께하면 매일 주말이 되는 에브리데이 침대</p>
+                            <span>487,000</span><span>774,000</span>
+                        </div>
+                        <div class="swiper-slide sec2_slide">
+                            <div class="sec2_slideimgbox">
+                                <div class="sec2_slidehover">
+                                    <div>
+                                        <div class="sec2_btn">
+                                            <img src="img/icon/heart.png" alt="">
+                                        </div>
+                                        <div class="sec2_btn">
+                                            <img src="img/icon/cart.png" alt="">
+                                        </div>
+                                        <div class="sec2_btn">
+                                            <img src="img/icon/search2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>BEST 2</p>
+                                <img src="img/products/sec2_2.jpg" alt="sec2">
+                            </div>
+                            <p>Elsa 거실장</p>
+                            <p>안정적인 프레임의 깔끔한 디자인</p>
+                            <span>399,000</span><span>597,000</span>
+                        </div>
+                        <div class="swiper-slide sec2_slide">
+                            <div class="sec2_slideimgbox">
+                                <div class="sec2_slidehover">
+                                    <div>
+                                        <div class="sec2_btn">
+                                            <img src="img/icon/heart.png" alt="">
+                                        </div>
+                                        <div class="sec2_btn">
+                                            <img src="img/icon/cart.png" alt="">
+                                        </div>
+                                        <div class="sec2_btn">
+                                            <img src="img/icon/search2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>BEST 3</p>
+                                <img src="img/products/sec2_3.jpg" alt="sec2">
+                            </div>
+                            <p>빈켈 장식장</p>
+                            <p>단정함 속 자유로움을 채우는 디자인</p>
+                            <span>487,000</span><span>774,000</span>
+                        </div>
+                        <div class="swiper-slide sec2_slide">
+                            <div class="sec2_slideimgbox">
+                                <div class="sec2_slidehover">
+                                    <div>
+                                        <div class="sec2_btn">
+                                            <img src="img/icon/heart.png" alt="">
+                                        </div>
+                                        <div class="sec2_btn">
+                                            <img src="img/icon/cart.png" alt="">
+                                        </div>
+                                        <div class="sec2_btn">
+                                            <img src="img/icon/search2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>BEST 4</p>
+                                <img src="img/products/sec2_4.jpg" alt="sec2">
+                            </div>
+                            <p>쏠리도 스페인 세라믹 테이블(확장형)</p>
+                            <p>Solido</p>
+                            <span>798,000</span><span>1,187,000</span>
+                        </div>
+                        <div class="swiper-slide sec2_slide">
+                            <div class="sec2_slideimgbox">
+                                <div class="sec2_slidehover">
+                                    <div>
+                                        <div class="sec2_btn">
+                                            <img src="img/icon/heart.png" alt="">
+                                        </div>
+                                        <div class="sec2_btn">
+                                            <img src="img/icon/cart.png" alt="">
+                                        </div>
+                                        <div class="sec2_btn">
+                                            <img src="img/icon/search2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>BEST 5</p>
+                                <img src="img/products/sec2_5.jpg" alt="sec2">
+                            </div>
+                            <p>브리엄 퀸 리클라이너 침대 (라이트그레이)</p>
+                            <p>Brium</p>
+                            <span>786,000</span><span>1,179,000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sec2_prev">
+                <img src="img/icon/left.png" alt="sec2_arrow">
+            </div>
+            <div class="sec2_next">
+                <img src="img/icon/right.png" alt="sec2_arrow">
+            </div>
+            <div id="viewmore_box">
+                <button id="viewmore">VIEW MORE</button>
+            </div>
+        </div>
+
+
+
+        <!-- sec3 -->
+        <div id="sec3">
+            <div class="align" id="sec3_align">
+                <h1>CURATION</h1>
+
+
+
+                <!-- sec3_pcCuration -->
+                <div id="sec3_con">
+                    <a href="#" class="sec3_box">
+                        <img src="img/curation/blen.jpg" alt="curation">
+                        <div class="sec3_textbox">
+                            <h1>Blen</h1>
+                            <p>
+                                심플하고 간결한 <br>
+                                선의 미학
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#" class="sec3_box">
+                        <img src="img/curation/Desento.jpg" alt="curation">
+                        <div class="sec3_textbox">
+                            <h1>Desento</h1>
+                            <p>
+                                세련된 무드의 <br>
+                                스페인산 세라믹
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#" class="sec3_box">
+                        <img src="img/curation/Adeline.jpg" alt="curation">
+                        <div class="sec3_textbox">
+                            <h1>Adeline</h1>
+                            <p>
+                                프리미엄 뉴트럴 <br>
+                                모던 디자인
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#" class="sec3_box">
+                        <img src="img/curation/Herman.jpg" alt="curation">
+                        <div class="sec3_textbox">
+                            <h1>Herman</h1>
+                            <p>
+                                고혹적인 <br>
+                                프리미엄 나파 가죽
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <!-- sec3_mobileCuration -->
+                <div id="sec3_mobilecon">
+                    <div class="swiper sec3_swiper1">
+                        <div class="swiper-wrapper">
+                            <a href="#" class="swiper-slide sec3_slide1">
+                                <img src="img/curation/blen.jpg" alt="curation">
+                                <div class="sec3_slide1_textbox">
+                                    <h1>Blen</h1>
+                                    <p>심플하고 간결한 선의 미학</p>
+                                </div>
+                            </a>
+                            <a href="#" class="swiper-slide sec3_slide1">
+                                <img src="img/curation/Desento.jpg" alt="curation">
+                                <div class="sec3_slide1_textbox">
+                                    <h1>Desento</h1>
+                                    <p>세련된 무드의 스페인산 세라믹</p>
+                                </div>
+                            </a>
+                            <a href="#" class="swiper-slide sec3_slide1">
+                                <img src="img/curation/Adeline.jpg" alt="curation">
+                                <div class="sec3_slide1_textbox">
+                                    <h1>Adeline</h1>
+                                    <p>프리미엄 뉴트럴 모던 디자인</p>
+                                </div>
+                            </a>
+                            <a href="#" class="swiper-slide sec3_slide1">
+                                <img src="img/curation/Herman.jpg" alt="curation">
+                                <div class="sec3_slide1_textbox">
+                                    <h1>Herman</h1>
+                                    <p>고혹적인 프리미엄 나파 가죽</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sec3_slide1scrolltext">
+                        <p>Scroll</p>
+                        <img src="img/icon/rightright.png" alt="rightright">
+                    </div>
+                </div>
+
+
+
+                <!-- sec3_mobile2Curation -->
+                <div class="sec3_slider">
+                    <div class="swiper sec3_swiper2">
+                        <div class="swiper-wrapper">
+                            <a href="#" class="swiper-slide sec3_slide2">
+                                <img src="img/curation/blen.jpg" alt="sec3">
+                                <div class="sec3_slide2box">
+                                    <h1>Blen</h1>
+                                    <p>심플하고 간결한 선의 미학</p>
+                                </div>
+                            </a>
+                            <a href="#" class="swiper-slide sec3_slide2">
+                                <img src="img/curation/Desento.jpg" alt="sec3">
+                                <div class="sec3_slide2box">
+                                    <h1>Desento</h1>
+                                    <p>세련된 무드의 스페인산 세라믹</p>
+                                </div>
+                            </a>
+                            <a href="#" class="swiper-slide sec3_slide2">
+                                <img src="img/curation/Adeline.jpg" alt="sec3">
+                                <div class="sec3_slide2box">
+                                    <h1>Adeline</h1>
+                                    <p>프리미엄 뉴트럴 모던 디자인</p>
+                                </div>
+                            </a>
+                            <a href="#" class="swiper-slide sec3_slide2">
+                                <img src="img/curation/Herman.jpg" alt="sec3">
+                                <div class="sec3_slide2box">
+                                    <h1>Herman</h1>
+                                    <p>고혹적인 프리미엄 나파 가죽</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sec3_slide2scrolltext">
+                        <p>Scroll</p>
+                        <img src="img/icon/rightright.png" alt="rightright">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- sec4 -->
+        <div id="sec4">
+            <div class="align" id="sec4_align">
+                <h1>SHOWROOM</h1>
+                <div id="sec4_con">
+                    <div class="sec4_box">
+                        <img src="img/showroom/showroom_1.jpg" alt="showroom">
+                        <div>
+                            <p>벤스의 디자인, 주목받는 이유가 있습니다.</p>
+                            <span>
+                                CIFF에 참가하는 가구 브랜드는 200개국 3,900여개입니다. <br>
+                                디자이너, 인테리어 전문가, 언론사 그리고 바이어와 관람객에 이르기까지 170,000명의 시선을 받는 대규모 가구박람회입니다.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="sec4_box">
+                        <img src="img/showroom/showroom_2.jpg" alt="showroom">
+                        <div>
+                            <p>벤스는 외국 유수의 가구 브랜드와 디자인으로 겨루었습니다.</p>
+                            <span>
+                                가장 설레고 가능성을 본 공통의 관람평이 있습니다. <br>
+                                '매혹적인 디자인에 가격대까지 합리적이다. 우아한데 미니멀하다. 콘템포러리 답다.'
+                            </span>
+                        </div>
+                    </div>
+                    <div class="sec4_box">
+                        <img src="img/showroom/showroom_3.jpg" alt="showroom">
+                        <div>
+                            <p>최우수 부스 디자인 프라이즈</p>
+                            <span>
+                                이러한 반향은 2개 부분의 수상에 이어졌고 그 중에 하나가 '최우수 부스 디자인 프라이즈'였습니다. <br>
+                                해외의 찬사가 있던 벤스의 부스디자인이 녹아 있는 곳,
+                                고객님께서 방문하실 벤스의 플래그쉽 스토어입니다.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <button id="showroom">VIEW MORE</button>
+            </div>
+        </div>
+
+
+
+        <!-- sec5 -->
+        <div id="sec5">
+            <div class="align" id="sec5_align">
+                <h1>SPONSORED</h1>
+            </div>
+            <div class="swiper sec5_swiper1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide sec5_slide1">
+                        <img src="img/people/마크툽.jpg" alt="people">
+                        <p>가수 마크툽</p>
+                    </div>
+                    <div class="swiper-slide sec5_slide1">
+                        <img src="img/people/곽희수.jpg" alt="people">
+                        <p>건축가 곽희수</p>
+                    </div>
+                    <div class="swiper-slide sec5_slide1">
+                        <img src="img/people/임선혜.jpg" alt="people">
+                        <p>소프라노 임선혜</p>
+                    </div>
+                    <div class="swiper-slide sec5_slide1">
+                        <img src="img/people/김형석.jpg" alt="people">
+                        <p>작곡가 김형석</p>
+                    </div>
+                    <div class="swiper-slide sec5_slide1">
+                        <img src="img/people/소유.jpg" alt="people">
+                        <p>가수 소유</p>
+                    </div>
+                    <div class="swiper-slide sec5_slide1">
+                        <img src="img/people/김민석.jpg" alt="people">
+                        <p>배우 김민석</p>
+                    </div>
+                    <div class="swiper-slide sec5_slide1">
+                        <img src="img/people/신영숙.jpg" alt="people">
+                        <p>뮤지컬배우 신영숙</p>
+                    </div>
+                    <div class="swiper-slide sec5_slide1">
+                        <img src="img/people/기섭.jpg" alt="people">
+                        <p>가수 기섭</p>
+                    </div>
+                    <div class="swiper-slide sec5_slide1">
+                        <img src="img/people/장현성.jpg" alt="people">
+                        <p>배우 장현성</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper sec5_swiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide sec5_slide2">
+                        <img src="img/media/그해우리는.jpg" alt="media">
+                        <p>SBS드라마 그해 우리는</p>
+                    </div>
+                    <div class="swiper-slide sec5_slide2">
+                        <img src="img/media/킬힐.jpg" alt="media">
+                        <p>tvN드라마 킬힐</p>
+                    </div>
+                    <div class="swiper-slide sec5_slide2">
+                        <img src="img/media/내일.jpg" alt="media">
+                        <p>MBC드라마 내일</p>
+                    </div>
+                    <div class="swiper-slide sec5_slide2">
+                        <img src="img/media/별똥별.jpg" alt="media">
+                        <p>tvN드라마 별똥별</p>
+                    </div>
+                    <div class="swiper-slide sec5_slide2">
+                        <img src="img/media/지금부터쇼타임.jpg" alt="media">
+                        <p>MBC드라마 지금부터쇼타임</p>
+                    </div>
+                    <div class="swiper-slide sec5_slide2">
+                        <img src="img/media/군검사도베르만.jpg" alt="media">
+                        <p>tvN드라마 군검사도베르만</p>
+                    </div>
+                    <div class="swiper-slide sec5_slide2">
+                        <img src="img/media/지금헤어지는중입니다.jpg" alt="media">
+                        <p>SBS드라마 지금, 헤어지는 중입니다</p>
+                    </div>
+                    <div class="swiper-slide sec5_slide2">
+                        <img src="img/media/크레이지러브.jpg" alt="media">
+                        <p>KBS2드라마 크레이지 러브</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- sec6 -->
+        <div id="sec6">
+            <div id="sec6_wrap">
+                <div class="align" id="sec6_align">
+                    <h1>BEST REVIEW</h1>
+                    <div class="swiper sec6_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide sec6_slide">
+                                <div class="sec6_slide_imgbox">
+                                    <img src="img/review/review1.jpg" alt="review">
+                                </div>
+                                <p>화이트엔젤 수퍼싱글 침대 구매 후기</p>
+                                <span>
+                                    말이 필요없습니다!
+                                    분당쇼룸가서 거의 모든 가구를 벤스에서
+                                    구매하게 됐네요~
+                                </span>
+                            </div>
+                            <div class="swiper-slide sec6_slide">
+                                <div class="sec6_slide_imgbox">
+                                    <img src="img/review/review2.jpg" alt="review">
+                                </div>                                <p>노드 천연가죽 소파 카우치형 구매 후기</p>
+                                <span>
+                                    생각외로 디자인 괜찮아요. 크기도 적당하구요.
+                                    다른 가구랑도 잘 어울리는 것 같아요.
+                                </span>
+                            </div>
+                            <div class="swiper-slide sec6_slide">
+                                <div class="sec6_slide_imgbox">
+                                    <img src="img/review/review3.jpg" alt="review">
+                                </div>                                <p>폴센 패브릭 퀸 침대 구매 후기</p>
+                                <span>
+                                    호텔 스위트룸 같은 인테리어!
+                                    침대의 헤드부분도 특수소재 원단이라
+                                    뛰다가 부딪혀도 안심되네요.
+                                </span>
+                            </div>
+                            <div class="swiper-slide sec6_slide">
+                                <div class="sec6_slide_imgbox">
+                                    <img src="img/review/review4.jpg" alt="review">
+                                </div>                                <p>엘가A 퀸 침대(월넛)</p>
+                                <span>
+                                    벤스 판교 쇼룸에서 본 침대를 인터넷으로 보고 너무 마음에 들어서 쇼룸 매장에같이 가서 확인했고, 
+                                    종류별로 다 누워보고 결정했습니다.
+                                </span>
+                            </div>
+                            <div class="swiper-slide sec6_slide">
+                                <div class="sec6_slide_imgbox">
+                                    <img src="img/review/review5.jpg" alt="review">
+                                </div>                                <p>노만 프리미엄 에닐린 천연가죽 소파 구매 후기</p>
+                                <span>
+                                    브라운계열의 가죽소파를 두달여가량 찾아보면서 
+                                    가격, 컬러, 가죽의 퀄리티, 디자인 모두 만족 시키는 제품 찾기가 힘들다는 걸 알았어요.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button id="bestReview">VIEW MORE</button>
+                <div class="sec6_next">
+                    <img src="img/icon/right.png" alt="sec6_next">
+                </div>
+                <div class="sec6_prev">
+                    <img src="img/icon/left.png" alt="sec6_prev">
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- footer -->
+        <div id="footer">
+            <div class="align" id="fooer_align">
+                <div id="footer_top">
+                    <div id="footer_top1" class="footer_top_text">
+                        <a href="#">회사소개</a>
+                        <a href="#">수상내역</a>
+                        <a href="#">쇼룸안내</a>
+                        <a href="#">벤스플래그쉽스토어</a>
+                    </div>
+                    <div id="footer_top2" class="footer_top_text">
+                        <a href="#">이용약관</a>
+                        <a href="#">개인정보처리방침</a>
+                        <a href="#">이용안내</a>
+                    </div>
+                    <div id="footer_top3">
+                        <span>Follow us</span>
+                        <div id="footer_top_sns">
+                            <a href="#"><img src="img/logo/instagram.jpg" alt="sns" id="instagram"></a>
+                            <a href="#"><img src="img/logo/blog.jpg" alt="sns" id="blog"></a>
+                            <a href="#"><img src="img/logo/facebook.jpg" alt="sns" id="facebook"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="footer_mid">
+                    <div id="footer_mid_left">
+                        <img src="img/logo/bens.png" alt="logo">
+                        <p>상호명 : 주식회사 벤스코리아 ㅣ 대표자 : 황지현, 배성민</p>
+                        <p>대표전화 : 1544-6400 ㅣ 팩스 : 032-724-0058 ㅣ 개인정보보호관리책임자 : 황지현</p>
+                        <p>주소 : 인천광역시 서구 봉수대로 193</p>
+                        <p>사업자 등록번호 : 130-86-79874 ㅣ 통신판매업 신고 : 제2017-서울강남-02831호</p>
+                        <p>Copyright©2007 주식회사 벤스 All right reserved. Design by 벤스</p>
+                    </div>
+                    <div id="footer_mid_right">
+                        <div id="customerCenter" class="footer_mid_center">
+                            <p>CUSTOMER CENTER</p>
+                            <p>1544 - 6400</p>
+                            <p>MON-FRI : 09:30 ~ 18:00</p>
+                        </div>
+                        <div id="asCenter" class="footer_mid_center">
+                            <p>A/S CENTER</p>
+                            <p>1544 - 3506</p>
+                            <p>MON-FRI : 09:30 ~ 18:00</p>
+                        </div>
+                    </div>
+                </div>
+                <p id="footer_bot">고객님은 안전거래를 위해 결제시 저희 쇼핑몰에서 가입한 구매안전 서비스를 이용하실 수 있습니다. [서비스가입정보확인]</p>
+            </div>
+        </div>
+
+
+
+        <!-- wrap/ -->
+    </div>
+
+
+
+    <!-- swiper script -->
+    <script>
+        // sec1
+        var swiper = new Swiper(".sec1_swiper", {
+            navigation: {
+                nextEl: ".sec1_next",
+                prevEl: ".sec1_prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            speed: 1600,
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+        });
+
+
+
+        // sec2
+        var swiper = new Swiper(".sec2_swiper", {
+            navigation: {
+                nextEl: ".sec2_next",
+                prevEl: ".sec2_prev",
+            },
+            breakpoints:{
+                1920: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                1200: {
+                    slidesPerView: 3,
+                    spaceBetween: 15,
+                },
+                767: {
+                    slidesPerView: 2,
+                    spaceBetween: 15,
+                },
+                500: {
+                    slidesPerView: 1,
+                },
+            },
+            speed: 800,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+        });
+
+
+
+        // sec3
+        var swiper = new Swiper(".sec3_swiper1", {
+            slidesPerView: 2,
+            speed: 800,
+        });
+
+        var swiper = new Swiper(".sec3_swiper2", {
+            slidesPerView: 1,
+            speed: 800,
+        });
+
+
+
+        // sec5
+        var swiper = new Swiper(".sec5_swiper1", {
+            breakpoints:{
+                500:{
+                    slidesPerView: 2,
+                },
+                767: {
+                    slidesPerView: 3,
+                },
+                1200: {
+                    slidesPerView: 4,
+                },
+                1920: {
+                    slidesPerView: 6,
+                }
+            },
+            speed: 800,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+
+        var swiper = new Swiper(".sec5_swiper2", {
+            breakpoints:{
+                1920: {
+                    slidesPerView: 4,
+                },
+                1200:{
+                    slidesPerView: 3,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                500: {
+                    slidesPerView: 1,
+                },
+            },
+            speed: 800,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+
+
+
+        // sec6
+        var swiper = new Swiper(".sec6_swiper", {
+            navigation: {
+                nextEl: ".sec6_next",
+                prevEl: ".sec6_prev",
+            },
+            breakpoints:{
+                1920: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                1200: {
+                    slidesPerView: 3,
+                    spaceBetween: 15,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 15,
+                },
+                500: {
+                    slidesPerView: 1,
+                },
+            },
+            speed: 800,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+</body>
+
+</html>
