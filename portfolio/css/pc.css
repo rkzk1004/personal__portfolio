@@ -38,7 +38,7 @@
 
 
     /* intro */
-    #intro{
+    .intro__first{
         position: fixed;
         top: 0;
         left: 0;
@@ -69,9 +69,6 @@
     }
     #menu>li>a{
         font-size: 19px;
-    }
-    .a_hover{
-        color: #b48484;
     }
     #welcome{
         position: fixed;
@@ -287,7 +284,7 @@
         transform: translate(-50%,-50%);
         width: 100%;
         height: 100%;
-        background-color: rgba(255,255,255,.4);
+        background-color: rgba(255,255,255,.5);
         z-index: 1;
         opacity: 0;
         transition: all .3s linear;
@@ -297,8 +294,8 @@
         justify-content: center;
     }
     .sec3__div:hover .sec3__div-info{
-        width: 97%;
-        height: 95%;
+        width: 96%;
+        height: 94%;
         backdrop-filter: blur(5px);
         opacity: 1;
     }
@@ -306,24 +303,25 @@
         position: relative;
     }
     .sec3__div-info-title{
-        font-size: 33px;
-        font-weight: bold;
-        margin-bottom: 50px;
-    }
-    .sec3__div-info-text{
-        font-size: 22px;
+        font-size: 36px;
         font-weight: bold;
         margin-bottom: 10px;
     }
-    .sec3__div-info-skill{
-        font-size: 15px;
-        font-weight: bold;
-        color: rgba(0,0,0,.6);
+    .sec3__div-info-text{
+        font-size: 19px;
+        font-weight: 500;
+        color: rgba(0,0,0,.7);
         margin-bottom: 50px;
+    }
+    .sec3__div-info-textspan{
+        margin-right: 5px;
+    }
+    .sec3__div-info-textspan:last-child{
+        margin-right: 0;
     }
     .sec3__div-info-btn{
         position: relative;
-        font-size: 17px;
+        font-size: 19px;
     }
     .sec3__div-info-btn::after{
         content: '';
@@ -337,9 +335,6 @@
     }
     .sec3__div-info-btn:hover::after{
         width: 100%;
-    }
-    .sec3__div-info-btn:first-child{
-        margin-right: 30px;
     }
     #bens{
         margin-top: 150px;

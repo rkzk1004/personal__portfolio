@@ -5,11 +5,11 @@ $(function(){
     // intro
 
     // setTimeout(function(){
-    //     $('#intro').fadeIn(1500).delay(1500).fadeOut(1500)
+    //     $('.intro__first').fadeIn(1500).delay(1500).fadeOut(1500)
     // },800)
     
     // setTimeout(function(){
-    //     $('.intro').css({
+    //     $('.intro__second').css({
     //         opacity: 1,
     //         transition: '1.5s ease'
     //     })

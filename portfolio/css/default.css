@@ -4,9 +4,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Noto Sans KR', sans-serif;
-    /* font-family: 'Playfair Display', serif; */
-    /* font-family: 'Black Han Sans', sans-serif; */
-    /* font-family: 'Oswald', sans-serif; */
     scroll-behavior: smooth;
 }
 body{

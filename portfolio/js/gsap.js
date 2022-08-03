@@ -19,6 +19,7 @@ $(function(){
         scrollTrigger: {
             trigger: '#sec3',
             toggleActions: 'restart none none reverse',
+            start: 'top 60%',
         },
         y: 200,
         opacity: 0,
