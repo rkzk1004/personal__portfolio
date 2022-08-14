@@ -244,7 +244,7 @@
     #sec3{
         position: relative;
         width: 100%;
-        height: 185vh;
+        height: 280vh;
         padding-top: 350px;
     }
     #sec3_work{
@@ -277,12 +277,11 @@
     }
     .sec3__div-info{
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
+        top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(255,255,255,.5);
+        background-color: rgba(0,0,0,.1);
         z-index: 1;
         opacity: 0;
         transition: all .3s linear;
@@ -291,9 +290,10 @@
         align-items: center;
         justify-content: center;
     }
+    .sec3__div-info.vogue{
+        background-color: rgba(255,255,255,.2);
+    }
     .sec3__div:hover .sec3__div-info{
-        width: 97%;
-        height: 95%;
         backdrop-filter: blur(5px);
         opacity: 1;
     }
@@ -301,18 +301,21 @@
         position: relative;
     }
     .sec3__div-info-title{
-        font-size: 30px;
+        font-size: 24px;
         font-weight: bold;
         margin-bottom: 2px;
+        font-family: 'Gowun Batang', serif;
     }
     .sec3__div-info-text{
         font-size: 15px;
         font-weight: 500;
         color: rgba(0,0,0,.7);
+        font-weight: bold;
         margin-bottom: 40px;
     }
     .sec3__div-info-textspan{
         margin-right: 5px;
+        font-family: 'Gowun Batang', serif;
     }
     .sec3__div-info-btn{
         position: relative;
@@ -356,8 +359,8 @@
     #github{
         display: block;
         margin: 0 auto;
-        width: 100px;
-        height: 100px;
+        width: 60px;
+        height: 60px;
         margin-bottom: 40px;
         transition: all .1s;
     }
