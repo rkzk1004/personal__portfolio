@@ -263,92 +263,34 @@
         font-weight: bold;
     }
     .sec2_margin{
-        margin-bottom: 70px;
+        margin-bottom: 150px;
     }
     .sec2_big>span{
         color: rgba(255,255,255,.4);
     }
     .sec2_small{
-        font-size: 15px;
-    }
-    .sec2_planText{
-        color: rgba(255,255,255,.4);
-        padding-left: 5px;
-    }
-    .sec2_planText{
-        color: rgba(255,255,255,.4);
-        padding-left: 5px;
-    }
-    .sec2_small>div:nth-child(1){
-        margin-bottom: 100px;
-    }
-    .sec2_small>div:nth-child(1)>div:nth-child(1){
-        margin-bottom: 80px;
+        font-size: 19px;
     }
     .smallbox>p:nth-child(1){
+        font-size: 35px;
+        margin-bottom: 60px;
+        text-align: center;
+        font-weight: 900;
+    }
+    .smallbox .box{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .smallbox .box p{
+        font-size: 17px;
         color: rgba(255,255,255,.4);
-        margin-bottom: 20px;
-    }
-    .smallbox>p{
-        margin-bottom: 7px;
-    }
-    .skillbox{
-        display: flex;
-        align-items: center;
         margin-bottom: 15px;
     }
-    #native_none{
-        display: none;
+    .smallbox .box span{
+        margin-right: 10px;
     }
-    .skillbox>p{
-        width: 80px;
-        text-align: end;
-        margin-right: 20px;
-    }
-    .skillbox>div{
-        position: relative;
-        width: 245px;
-        height: 4px;
-        border-radius: 4px;
-        background-color: rgba(255,255,255,.25);
-    }
-    .skillbox>div>div{
-        position: absolute;
-        top: 0;
-        left:0;
-        height: 100%;
-        border-radius: 5px;
-        transition: all .3s ease;
-    }
-    #html{
-        width: 90%;
-    }
-    #css{
-        width: 90%;
-    }
-    #jquery{
-        width: 85%;
-    }
-    #javascript{
-        width: 85%;
-    }
-    #figma{
-        width: 90%;
-    }
-    #ps{
-        width: 80%;
-    }
-    #ai{
-        width: 80%;
-    }
-    #react{
-        width: 80%;
-    }
-    #vue{
-        width: 80%;
-    }
-    #react_native{
-        width: 80%;
+    .smallbox .box span:last-child{
+        margin-right: 0;
     }
 
 

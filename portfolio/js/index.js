@@ -4,16 +4,16 @@ $(function(){
 
     // intro
 
-    setTimeout(function(){
-        $('.intro__first').fadeIn(1500).delay(1500).fadeOut(1500)
-    },800)
+    // setTimeout(function(){
+    //     $('.intro__first').fadeIn(1500).delay(1500).fadeOut(1500)
+    // },800)
     
-    setTimeout(function(){
-        $('.intro__second').css({
-            opacity: 1,
-            transition: '1.5s ease'
-        })
-    },5700)
+    // setTimeout(function(){
+    //     $('.intro__second').css({
+    //         opacity: 1,
+    //         transition: '1.5s ease'
+    //     })
+    // },5700)
 
 
 
