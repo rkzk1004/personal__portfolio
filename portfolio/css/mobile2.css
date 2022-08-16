@@ -29,7 +29,7 @@
 
 
     /* intro */
-    .intro__first{
+    #intro{
         position: fixed;
         top: 0;
         left: 0;
