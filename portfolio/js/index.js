@@ -2,162 +2,72 @@ $(function(){
 
 
 
-    // intro
-
+    // intro_fade
     setTimeout(function(){
-        $('.intro__first').fadeIn(1500).delay(1500).fadeOut(1500)
+        $('.intro').fadeIn(1300).delay(1000).fadeOut(1300)
     },800)
-    
     setTimeout(function(){
-        $('.intro__second').css({
-            opacity: 1,
-            transition: '1.5s ease'
-        })
-    },5700)
+        $('.wrap').addClass('on')
+    },4300)
 
 
 
-    // sec2_bgColor
+    // info_bg
     $(window).scroll(function(){
+        let curr = $(window).scrollTop()
+        let info_bottom = $('.info').offset().top + $('.info').outerHeight()
 
-        let scroll = $(window).scrollTop(),
-            sec2_top = $('#sec2').offset().top,
-            sec2_bottom = $('#sec2').offset().top + $('#sec2').outerHeight()
-        
-        if(sec2_top-800 <= scroll && scroll <= sec2_bottom-500) {
-
-            $('body').css({
-                backgroundColor: '#000',
-                transition: '0.3s ease',
-            })
-
-            $('.mainText').css({
-                color: 'rgba(255,255,255,1)',
-            })
-            $('.mainText').hover(function(){
-                $(this).css({
-                    color: 'rgba(255,255,255,.4)',
-                    transition: '0.3s ease',
-                })
-            },function(){
-                $(this).css({
-                    color: 'rgba(255,255,255,1)',
-                    transition: '0.3s ease',
-                })
-            })
-
-            $('.main_black').fadeOut(300)
-            $('.main_white').fadeIn(300)
-
-            $('#mobile_menubtn').css({
-                color: 'rgba(255,255,255,1)',
-            })
-            $('#mobile_menubtn').hover(function(){
-                $(this).css({
-                    color: 'rgba(255,255,255,.4)',
-                    transition: '0.3s ease',
-                })
-            },function(){
-                $(this).css({
-                    color: 'rgba(255,255,255,1)',
-                    transition: '0.3s ease',
-                })
-            })
-            
-            $('#mobile2_year').css({
-                color: 'white',
-                transition: '0.3s ease',
-            })
-
-            $('.white').css({
-                backgroundColor: 'rgba(255,255,255,1)',
-            })
-            
-            $('#mobile_menudot>div').css({
-                backgroundColor: '#fff',
-            })
-
-            $('.mobile2_menubox').css({
-                backgroundColor: '#000'
-            })
-            $('.mobile2_menubox>div>a').css({
-                color: '#fff'
-            })
-
-        } else {
-
-            $('body').css({
-                backgroundColor: '#fff',
-                transition: '0.3s ease',
-            })
-
-            $('.mainText').css({
-                color: 'rgba(0,0,0,1)',
-            })
-            $('.mainText').hover(function(){
-                $(this).css({
-                    color: 'rgba(0,0,0,.4)',
-                    transition: '0.3s ease',
-                })
-            },function(){
-                $(this).css({
-                    color: 'rgba(0,0,0,1)',
-                    transition: '0.3s ease',
-                })
-            })
-
-            $('.main_white').fadeOut(300)
-            $('.main_black').fadeIn(300)
-
-            $('#mobile_menubtn').css({
-                color: 'rgba(0,0,0,1)',
-            })
-            $('#mobile_menubtn').hover(function(){
-                $(this).css({
-                    color: 'rgba(0,0,0,.4)',
-                    transition: '0.3s ease',
-                })
-            },function(){
-                $(this).css({
-                    color: 'rgba(0,0,0,1)',
-                    transition: '0.3s ease',
-                })
-            })
-
-            $('#mobile2_year').css({
-                color: 'black',
-                transition: '0.3s ease',
-            })
-
-            $('.white').css({
-                backgroundColor: '#fff',
-            })
-
-            $('#mobile_menudot>div').css({
-                backgroundColor: '#000',
-            })
-
-            $('.mobile2_menubox').css({
-                backgroundColor: '#fff'
-            })
-            $('.mobile2_menubox>div>a').css({
-                color: '#000'
-            })
+        if(500<curr && curr<info_bottom/1.25){
+            $('body').addClass('on')
+        }else{
+            $('body').removeClass('on')
         }
     })
 
 
 
-    // mobile_menudot
+    // info_gsap
+    gsap.from('.info .talk',{
+        scrollTrigger:{
+            trigger: '.info .talk',
+            start: 'top 90%',
+            toggleActions: 'restart none none reverse',
+            // markers: true,
+        },
+        y:100,
+        opacity:0,
+        duration:0.7,
+    })
 
-    $('#mobile_menudot').click(function(){
-        $('.mobile2_menubox').addClass('menubox2_toggle')
+    gsap.from('.info .skill',{
+        scrollTrigger:{
+            trigger: '.info .skill',
+            start: 'top 90%',
+            toggleActions: 'restart none none reverse',
+            // markers: true,
+        },
+        y:100,
+        opacity:0,
+        duration:0.7,
+    })
 
-        if($('.mobile2_menubox').addClass('menubox2_toggle')){
-            $('.mobile2_menubox>div>a').click(function(){
-                $('.mobile2_menubox').removeClass('menubox2_toggle')
-            })
-        }
+
+
+    // work__height
+    let work_totalHeight = $('.work .box').outerWidth()*4.5
+    
+    $('.work').css({
+        height: work_totalHeight
+    })
+
+
+
+    // mobile_btn
+    $('.mobile_btn .btn').click(function(){
+        $('.mobile_slide').addClass('on')
+    })
+    $('.mobile_slide .btn a').click(function(){
+        $('.mobile_slide').removeClass('on')
     })
 
 
