@@ -35,7 +35,7 @@
 
 
     /* intro */
-    #intro{
+    .intro__first{
         position: fixed;
         top: 0;
         left: 0;
