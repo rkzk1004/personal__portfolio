@@ -105,7 +105,7 @@
     }
     .text_img{
         position: absolute;
-        top: 16%;
+        top: 12%;
         left: 50%;
         height: 880px;
         transform: translateX(-50%);
@@ -203,12 +203,14 @@
     #sec3_work>img{
         height: 100%;
     }
+    .sec3_align{
+        width: 950px;
+    }
     .sec3__div{
         position: relative;
-        width: 80%;
+        width: 100%;
         height: 630px;
-        padding-bottom: 150px;
-        margin: 0 auto;
+        margin-bottom: 150px;
         transition: all .1s ease;
     }
     .sec3__div:first-child{
@@ -251,7 +253,7 @@
         font-size: 36px;
         font-weight: bold;
         margin-bottom: 10px;
-        font-family: 'Gowun Batang', serif;
+        /* font-family: 'Gowun Batang', serif; */
     }
     .sec3__div-info-text{
         font-size: 19px;
@@ -261,7 +263,7 @@
     }
     .sec3__div-info-textspan{
         margin-right: 5px;
-        font-family: 'Gowun Batang', serif;
+        /* font-family: 'Gowun Batang', serif; */
     }
     .sec3__div-info-textspan:last-child{
         margin-right: 0;

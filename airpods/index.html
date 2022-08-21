@@ -4,126 +4,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apple - AirPods</title>
+    <title>Airpods Max</title>
 
 
 
-    <!-- plugin -->
-    <script src="plugin/jquery-3.6.0.js"></script>
-    <script src="plugin/gsap.min.js"></script>
-    <script src="plugin/ScrollTrigger.min.js"></script>
+    <!-- plug -->
+    <script src="plug/jquery-3.6.0.js"></script>
+    <script src="plug/gsap.min.js"></script>
+    <script src="plug/ScrollTrigger.min.js"></script>
+    <script src="plug/swiper.js"></script>
+    <link rel="stylesheet" href="plug/swiper.css">
+    <script src="plug/siema.min.js"></script>
 
-    <!-- css, js -->
+    <!-- custom css, js -->
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="js/index.js"></script>
 
-    <!-- font awesome -->
+    <!-- icon, font -->
     <script src="https://kit.fontawesome.com/c7186b54a1.js" crossorigin="anonymous"></script>
-
-    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
 
 
 </head>
 <body>
-
+    
 
 
     <!-- wrap -->
     <div class="wrap">
-
-
-
+        
+    
+    
         <!-- header -->
-        <header class="header">
-            <a href="#" class="logo">
-                <img src="img/Apple_logo.svg" alt="logo">
-            </a>
-            <ul class="menu">
-                <li class="mainmenu">
-                    <a href="#" class="text">스토어</a>
-                    <a href="#" class="text">Mac</a>
-                    <a href="#" class="text">iPad</a>
-                    <a href="#" class="text">iPhone</a>
-                    <a href="#" class="text">Watch</a>
-                    <a href="#" class="text">AirPods</a>
-                    <a href="#" class="text">TV 및 홈</a>
-                    <a href="#" class="text">Apple 독점 제공</a>
-                    <a href="#" class="text">액세사리</a>
-                    <a href="#" class="text">고객지원</a>
-                </li>
+        <header>
+            <ul>
+                <li><a href=""><i class="fa-brands fa-apple apple"></i></a></li>
+                <li><a href="">스토어</a></li>
+                <li><a href="">Mac</a></li>
+                <li><a href="">iPad</a></li>
+                <li><a href="">iPhone</a></li>
+                <li><a href="">Watch</a></li>
+                <li><a href="">Airpods</a></li>
+                <li><a href="">TV 및 홈</a></li>
+                <li><a href="">Apple 독점 제공</a></li>
+                <li><a href="">액세사리</a></li>
+                <li><a href="">고객지원</a></li>
+                <li><a href=""><i class="fa-solid fa-magnifying-glass search"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-square square"></i></a></li>
             </ul>
-            <a href="#" class="btn search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </a>
-            <a href="#" class="btn basket">
-                <i class="fa-solid fa-basket-shopping"></i>
-            </a>
         </header>
+
+
+
+        <!-- sticky menu -->
+        <div class="sticky">
+            <div class="align">
+                <h1>AirPods Max</h1>
+                <div class="box">
+                    <span>개요</span>
+                    <a href="">제품 사양</a>
+                    <a href="">비교하기</a>
+                    <a href="">구입하기</a>
+                </div>
+            </div>
+        </div>
 
 
 
         <!-- sec1 -->
         <section class="sec1">
-            <div class="textbox">
-                <p class="text title01">새롭게 선보이는</p>
-                <p class="text title02">AirPods Max</p>
-            </div>
+            <img src="img/main/airpod.png" alt="sec1" class="airpod">
+            <img src="img/main/text.jpg" alt="sec1" class="text">
+            <h2>새롭게 선보이는 AirPods Max. 감동적인 하이파이 오디오와 AirPods 특유의 매혹적인 사용성의 완벽한 조합. 궁극의 개인 청음 기기를 드디어 만날 수 있습니다.</h2>
         </section>
 
 
 
         <!-- sec2 -->
         <section class="sec2">
-            <h1 class="title">
-                <div>하이파이 오디오.</div>
-                <div>액티브 노이즈 캔슬링과<br>주변음 허용 모드.</div>
-                <div>극장에 온 듯한 서라운드 사운드의<br>공간음향</div>
-                <div>매끈한 디자인. 뛰어난 착용감.</div>
-            </h1>
+            <video src="img/video/video.mp4" loop autoplay muted></video>
+            <div class="box">
+                <h1>하이파이 오디오.</h1>
+                <h1>액티브 노이즈 캔슬링과<br>주변음 허용 모드</h1>
+                <h1>극장에 온 듯한 서라운드 사운드의<br>공간 음향.</h1>
+                <h1>매끈한 디자인. 뛰어난 착용감.</h1>
+            </div>
         </section>
 
 
 
         <!-- sec3 -->
         <section class="sec3">
-            <div class="box01">
-                <img src="img/sc_intro_img01.jpg" alt="sec3__box01-img">
-                <p><span>특수 제작된 메시 직물</span>이 이어 쿠션을 감싸고 있어, 음악 청취 시 부드러운 베개 같은 포근함을 느낄 수 있습니다.</p>
-                <p>음향학적 공법으로 설계된 메모리 폼 소재의 <span>이어 쿠션</span>이 몰입감 만점의 차폐 공간을 생성하고 이를 통해 놀라운 사운드를 경험하게 해줍니다.</p>
-            </div>
-            <div class="box02">
-                <img src="img/sc_intro_img02.jpg" alt="sec3__box02-img">
-                <p>오버이어 헤드폰의 개념을 완전히 재구상했습니다. 그 결과 이어 쿠션부터 캐노피에 이르기까지 AirPods Max는 다양한 머리 모양에 맞는 최적의 어쿠스틱 차폐 공간을 생성하는 완벽한 핏으로 설계되어, 사운드 하나하나의 디테일에 온전히 몰입할 수 있게 해줍니다.</p>
-                <p>AirPods Max는 하이파이 오디오와 업계 최고 수준의 액티브 노이즈 캔슬링 기능으로 독보적인 청취 경험을 선사합니다. 맞춤형으로 제작된 드라이버의 각 요소가 연동하여 전체 음역대에 걸쳐 사운드 왜곡을 극한으로까지 줄여주죠. 깊고 풍부한 저음부터 정확한 중음과 선명하고 깨끗한 고음까지, 음 하나하나를 새로운 차원의 깔끔한 음질로 감상할 수 있습니다.</p>
-            </div>
-            <div class="box03">
-                <img src="img/sc_intro_img03.jpg" alt="sec3__box03-img">
-                <p>업계 최고 수준의 <span>액티브 노이즈 캔슬링</span> 기능이 외부 소음을 그에 상응하는 안티 노이즈로 상쇄하기 때문에 오롯이 콘텐츠의 사운드에만 집중할 수 있습니다.</p>
-                <p>소음 제어 버튼을 누르면 <span>주변음 허용 모드</span>로 전환됩니다. 외부 소리가 그대로 흘러 들어오기 때문에 주변 소리를 자연스럽게 들을 수 있고, 심지어는 대화도 가능하죠.</p>
-            </div>
+            <h3>디자인</h3>
+            <h1>과감하리만치<br>독창적인 구조.</h1>
+            <p>오버이어 헤드폰의 개념을 완전히 재구상했습니다. 그 결과 이어 쿠션부터 캐노피에 이르기까지 AirPods Max는 다양한 머리 모양에 맞는 최적의 어쿠스틱 차폐 공간을 생성하는 완벽한 핏으로 설계되어, 사운드 하나하나의 디테일에 온전히 몰입할 수 있게 해줍니다.</p>
+            <img src="img/content/another/black.jpg" alt="black">
+            <p class="gsap"><span>아름다운 산화 피막 알루미늄 이어컵</span>에는<br>혁신적으로 설계된 메커니즘이 적용되어 있어<br>각각의 이어컵이 독립적으로 회전하여, 귀에<br>가해지는 압력을 균일하게 맞춰줍니다.</p>
         </section>
 
 
 
         <!-- sec4 -->
         <section class="sec4">
-            <p>5가지 색상,<br>단조로움을 거부한다.</p>
-            <figure>
-                <img src="img/AirPods Max.png" alt="sec4__airpodsmax">
-            </figure>
             <div class="box01">
-                <div class="con">
-                    <img src="img/AirPods Max_silver.jpg" alt="sec4__airpods">
-                    <img src="img/AirPods Max_skyblue.jpg" alt="sec4__airpods">
-                    <img src="img/AirPods Max_spacegrey.jpg" alt="sec4__airpods">
-                    <img src="img/AirPods Max_green.jpg" alt="sec4__airpods">
-                    <img src="img/AirPods Max_pink.jpg" alt="sec4__airpods">
-                </div>
+                <img src="img/content/reds/reds_1.jpg" alt="reds">
+            </div>
+            <div class="box02">
+                <img src="img/content/reds/reds_2.jpg" alt="reds">
+                <p><span>특수 제작된 메시 직물</span>이 이어 쿠션을 감싸고 있어, 음악 청취 시 부드러운 베개 같은 포근함을 느낄 수 있습니다.</p>
+            </div>
+            <div class="box03">
+                <img src="img/content/reds/reds_3.jpg" alt="reds">
+                <p>음향학적 공법으로 설계된 메모리 폼 소재의 <span>이어 쿠션</span>이 몰입감 만점의 차폐 공간을 생성하고 이를 통해 놀라운 사운드를 경험하게 해줍니다.</p>
             </div>
         </section>
 
@@ -131,80 +127,250 @@
 
         <!-- sec5 -->
         <section class="sec5">
-            <div class="title">
-                <p>지치지 않는 배터리,<br>앵콜 받습니다.</p>
-                <p>20</p>
-                <p>시간 동안 음악 감상, 영화 시청, 전화 통화를 즐길 수 있습니다.<br>액티브 노이즈 캔슬링 및 공간 음향을 활성화한 상태에서 말이죠.<br>Lightning 커넥터로 쉽게 충전할 수 있고, 급할 때는 5분만 충전해도 1.5시간 동안 음악을 감상할 수 있답니다.</p>
-            </div>
-            <div class="tab-btn">
-                <a href="#nature" class="nature on">Airpods Max</a>
-                <a href="#studio" class="studio">Airpods Pro</a>
-            </div>
-            <div class="tab-con">
-                <div id="nature" class="box">
-                    <div class="imgbox">
-                        <img src="img/AirPods Max.png" alt="sec5__tab-natureimg">
-                    </div>
-                    <div class="textbox">
-                        <div class="text">
-                            <p>최대</p>
-                            <strong>20<span>시간</span></strong>
-                            <p>한 번 완전히 충전했을 때의 청취시간</p>
-                        </div>
-                        <div class="text">
-                            <p>약</p>
-                            <strong>1.5<span>시간</span></strong>
-                            <p>5분 충전했을 때의 청취시간</p>
-                        </div>
-                    </div>
-                </div>
-                <div id="studio" class="box on">
-                    <div class="imgbox">
-                        <img src="img/Airpods-Pro.jpg" alt="sec5__tab-natureimg">
-                    </div>
-                    <div class="textbox">
-                        <div class="text">
-                            <p>최대</p>
-                            <strong>4.5<span>시간</span></strong>
-                            <p>한 번 완전히 충전했을 때의 청취시간</p>
-                        </div>
-                        <div class="text">
-                            <p>약</p>
-                            <strong>1<span>시간</span></strong>
-                            <p>5분 충전했을 때의 청취시간</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box02">
-                <div class="text">
-                    <h1>자장가 같은 케이스.</h1>
-                    <p>부드럽고 슬림한 <span>Smart Case</span>에 보관 중일 때에는 AirPods Max가 초절전 모드로 들어가 전력을 아낍니다.</p>
-                </div>
-                <div class="imgbox">
-                    <img src="img/case.jpg" alt="sec5__box02-imgbox-case">
-                </div>
-            </div>
+            <img src="img/content/another/blue.jpg" alt="blue">
+            <p><span>Digital Crown</span>으로 정밀한 음량 조절, 트랙 전환,<br>전화 통화, Siri 호출까지 모두 가능합니다.</p>
         </section>
 
 
 
         <!-- sec6 -->
         <section class="sec6">
-            <div class="con">
-                <div class="box01">
-                    <img src="img/Apple-Music.jpg" alt="sec6__img">
+            <div class="btncon">
+                <h1>5가지 색상.<br>단조로움을 거부한다.</h1>
+                <ul>
+                    <li data-index='0'>
+                        <a href="#white" class="on">
+                            <div class="white">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li data-index='1'>
+                        <a href="#black">
+                            <div class="black">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li data-index='2'>
+                        <a href="#blue">
+                            <div class="blue">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li data-index='3'>
+                        <a href="#red">
+                            <div class="red">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li data-index='4'>
+                        <a href="#green">
+                            <div class="green">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="slidecon">
+                <div class="slide">
+                    <img src="img/content/product/white01.jpg" alt="slide">
+                    <img src="img/content/product/black01.jpg" alt="slide">
+                    <img src="img/content/product/blue01.jpg" alt="slide">
+                    <img src="img/content/product/red01.jpg" alt="slide">
+                    <img src="img/content/product/green01.jpg" alt="slide">
                 </div>
-                <div class="box02">
-                    <p>
-                        <img src="img/logo.png" alt="Apple_logo">
-                        <span>Music</span>
-                    </p>
-                    <p>AirPods Max를 구입하면<br>Apple Music이<br>6개월 무료.</p>
-                    <button class="more">더 알아보기</button>
+                <div class="fade">
+                    <img src="img/content/product/white02.jpg" alt="" id="white" class="on">
+                    <img src="img/content/product/black02.jpg" alt="" id="black">
+                    <img src="img/content/product/blue02.jpg" alt="" id="blue">
+                    <img src="img/content/product/red02.jpg" alt="" id="red">
+                    <img src="img/content/product/green02.jpg" alt="" id="green">
                 </div>
             </div>
         </section>
+
+
+
+        <!-- sec7 -->
+        <section class="sec7">
+            <h1>그 밖의 신기한 기능</h1>
+            <div class="con">
+                <div class="box01">
+                    <p>착용 감지</p>
+                    <p>AirPods Max는 벗으면 오디오를 일시 중지하고, 쓰면 다시 재생을 시작합니다. 비트 하나라도 놓칠 일이 없죠.</p>
+                </div>
+                <div class="box02">
+                    <p>알림 읽어주기</p>
+                    <p>‘알림 읽어주기’ 기능을 통해 Siri가 ‘메시지’, ‘전화’, ‘캘린더’, ‘미리 알림’ 등에서 보내는 중요한 알림이 오는 순간 자동으로 읽어주도록 할 수 있습니다.4 그리고 답장을 보낼 경우도 그냥 Siri에게 부탁만하면 됩니다. 손 하나 까딱할 필요 없이 말이죠.</p>
+                </div>
+                <div class="box03">
+                    <p>Siri 항시 대기</p>
+                    <p>간단히 “Siri야”라고 부르기만 하면 길 안내, 날씨 확인, 회의 일정 잡기 등을 간편하게 할 수 있습니다. 실행할 수 있는 명령이 더욱 다양해지면서 Siri의 쓰임새 역시 더 다양해졌죠.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- sec8 -->
+        <section class="sec8">
+            <h1>자장가 같은 케이스</h1>
+            <p>부드럽고 슬림한 <span>Smart Case</span>에 보관 중일 때에는 AirPods Max가 초절전 모드로 들어가<br>전력을 아낍니다.</p>
+            <img src="img/content/another/case.jpg" alt="case">            
+        </section>
+
+
+
+        <!-- sec9 -->
+        <section class="sec9">
+            <h2>지치지 않는 배터리,<br>앵콜 받습니다.</h2>
+            <h1>20</h1>
+            <p>시간 동안 음악 감상, 영화 시청, 전화 통화를 즐길 수 있습니다. 액티브 노이즈 캔슬링 및 공간 음향을 활성화한 상태에서 말이죠.5 Lightning 커넥터로 쉽게 충전할 수 있고, 급할 때는 5분만 충전해도 1.5시간 동안 음악을 감상할 수 있답니다.6</p>
+        </section>
+
+
+
+        <section class="sec10">
+            <div class="box01">
+                <div class="text">
+                    <h1>자신만의 이야기를<br>새기다</h1>
+                    <p>AirPods을 위한 새로운 각인 옵션.<br>글자, 이모티콘, 숫자 조합으로 더욱 개성있게</p>
+                    <a href="">AirPods Max 구입하기</a>
+                </div>
+                <img src="img/content/event/e2.jpg" alt="e2">
+            </div>
+            <div class="box02">
+                <img src="img/content/event/e3.jpg" alt="e3">
+                <div class="text">
+                    <div class="svg">
+                        <svg class="apple-music-logo" viewBox="0 0 83 20" aria-hidden="true">
+                            <path d="M34.752 19.746V6.243h-.088l-5.433 13.503h-2.074L21.711 6.243h-.087v13.503h-2.548V1.399h3.235l5.833 14.621h.1L34.064 1.4h3.248v18.347h-2.56zm16.649 0h-2.586v-2.263h-.062c-.725 1.602-2.061 2.504-4.072 2.504-2.86 0-4.61-1.894-4.61-4.958V6.37h2.698v8.125c0 2.034.95 3.127 2.81 3.127 1.95 0 3.124-1.373 3.124-3.458V6.37H51.4v13.376zm7.394-13.618c3.06 0 5.046 1.73 5.134 4.196h-2.536c-.15-1.296-1.087-2.11-2.598-2.11-1.462 0-2.436.724-2.436 1.793 0 .839.6 1.41 2.023 1.741l2.136.496c2.686.636 3.71 1.704 3.71 3.636 0 2.442-2.236 4.12-5.333 4.12-3.285 0-5.26-1.64-5.509-4.183h2.673c.25 1.398 1.187 2.085 2.836 2.085 1.623 0 2.623-.687 2.623-1.78 0-.865-.487-1.373-1.924-1.704l-2.136-.508c-2.498-.585-3.735-1.806-3.735-3.75 0-2.391 2.049-4.032 5.072-4.032zM66.1 2.836c0-.878.7-1.577 1.561-1.577.862 0 1.55.7 1.55 1.577 0 .864-.688 1.576-1.55 1.576a1.573 1.573 0 0 1-1.56-1.576zm.212 3.534h2.698v13.376h-2.698V6.37zm14.089 4.603c-.275-1.424-1.324-2.556-3.085-2.556-2.086 0-3.46 1.767-3.46 4.64 0 2.938 1.386 4.642 3.485 4.642 1.66 0 2.748-.928 3.06-2.48H83C82.713 18.067 80.477 20 77.317 20c-3.76 0-6.208-2.62-6.208-6.942 0-4.247 2.448-6.93 6.183-6.93 3.385 0 5.446 2.213 5.683 4.845h-2.573zM10.824 3.189c-.698.834-1.805 1.496-2.913 1.398-.145-1.128.41-2.33 1.036-3.065C9.644.662 10.848.05 11.835 0c.121 1.178-.336 2.33-1.01 3.19zm.999 1.619c.624.049 2.425.244 3.578 1.98-.096.074-2.137 1.272-2.113 3.79.024 3.01 2.593 4.012 2.617 4.037-.024.074-.407 1.419-1.344 2.812-.817 1.224-1.657 2.422-3.002 2.447-1.297.024-1.73-.783-3.218-.783-1.489 0-1.97.758-3.194.807-1.297.048-2.28-1.297-3.097-2.52C.368 14.908-.904 10.408.825 7.375c.84-1.516 2.377-2.47 4.034-2.495 1.273-.023 2.45.857 3.218.857.769 0 2.137-1.027 3.746-.93z"></path>
+                        </svg>
+                    </div>
+                    <h1>AirPods Max를 구입하면<br>Apple Music이<br>6개월 무료.*</h1>
+                    <a href="">더 알아보기</a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- footer -->
+        <footer>
+            <div class="align">
+                <div class="con01">
+                    <p>* 신규 가입자에게만 적용됩니다. 무료 체험 기간이 끝나면 월 8,900원에 이용할 수 있습니다. 본 프로모션은 한정된 기간 동안 신규 가입자에게만 적용되며, 신규 가입자는 적용 대상 기기를 iOS 15 또는 iPadOS 15 이후 버전이 설치된 Apple 기기에 연결해야 합니다. 무료 체험 혜택은 적용 대상 기기 페어링 이후 3개월 안에 신청할 수 있습니다. 적용 대상 기기를 이미 소유하고 있는 경우 오디오 제품을 구입하지 않아도 혜택을 받을 수 있습니다. 멤버십은 매월 자동으로 갱신되며, 해지 시 종료됩니다. 특정 제한 사항 및 기타 약관이 적용됩니다.</p>
+                    <ol>
+                        <li>공간 음향은 iOS 15 이후 버전의 스테레오 콘텐츠, Apple Music의 Dolby Atmos 또는 5.1 방식으로 제작된 음원, 5.1, 7.1 또는 Dolby Atmos 방식을 지원하는 애플리케이션에서 제공되는 5.1, 7.1 또는 Dolby Atmos 방식으로 촬영된 동영상 콘텐츠를 지원합니다.</li>
+                        <li>AirPods을 사용하려면 iOS 15.1 이후 버전, iPadOS 15.1 이후 버전, watchOS 8.1 이후 버전, tvOS 15.1 이후 버전, macOS Monterey 이후 버전이 설치된 Apple 기기가 필요합니다.</li>
+                        <li>최신 버전 iOS가 설치된 iPhone 8 이후 모델 또는 iPod touch(7세대), 최신 버전 iPadOS가 설치된 iPad Pro 12.9(2세대 이후 모델), iPad Pro 11, iPad Pro 10.5, iPad(5세대 이후 모델), iPad Air(3세대 이후 모델), iPad mini(5세대 이후 모델), 최신 버전 tvOS가 설치된 Apple TV 4K에서 사용할 수 있습니다.</li>
+                        <li>Siri는 일부 언어와 국가에서는 지원되지 않으며, 국가별로 기능이 다를 수 있습니다. 인터넷 연결이 필요합니다. 셀룰러 데이터 요금이 부과될 수 있습니다.</li>
+                        <li>테스트는 2020년 11월 Apple에서 시제품 AirPods Max, 소프트웨어와 페어링된 iPhone 12 Pro Max 및 배포 전 단계의 소프트웨어를 사용해 진행했습니다. 테스트는 AirPods Max의 오디오 재생이 중단될 때까지 iTunes Store에서 구입한 각기 다른 358곡의 오디오 트랙(256Kbps AAC 인코딩)으로 구성된 음악 재생 목록, 이동통신 전화 통화, iTunes Store에서 구입한 2시간 23분 분량의 영화 중 하나를 계속 재생하여 AirPods Max 배터리를 완전히 방전시키는 방식으로 진행되었습니다. 음량은 50%로 설정되었고, 액티브 노이즈 캔슬링과 공간 음향을 켠 상태였으며, 공간 음향은 영화 재생 중에만 작동되었습니다. 배터리 사용 시간은 기기 설정, 환경, 사용 방법 및 기타 여러 요인들에 따라 달라집니다.</li>
+                        <li>테스트는 2020년 11월 Apple에서 시제품 AirPods Max, 소프트웨어와 페어링된 iPhone 12 Pro Max 및 배포 전 단계의 소프트웨어를 사용해 진행했습니다. 플레이리스트는 iTunes Store에서 구매한 콘텐츠(256Kbps AAC 인코딩)로 구성된 358곡의 고유 오디오 트랙으로 구성되었습니다. 음량은 50%로 설정되었고, 액티브 노이즈 캔슬링과 공간 음향을 켠 상태였지만 공간 음향이 작동되진 않았습니다. 5분 충전 테스트는 방전된 AirPods Max를 5분간 충전한 후 AirPods Max의 오디오 재생이 중단될 때까지 오디오를 계속 재생하는 방식으로 진행되었습니다. 배터리 사용 시간은 기기 설정, 환경, 사용 방법 및 기타 여러 요인들에 따라 달라집니다.</li>
+                        <li>AirPods(3세대) 및 AirPods Pro는 땀과 습기에 강한 생활 방수 디자인으로 설계되었습니다(수상 스포츠 및 운동 제외). AirPods(3세대) 및 AirPods Pro는 IEC 규격 60529하의 IPX4 등급을 획득하였습니다. 제어된 실험실 조건에서 진행된 테스트 결과입니다. 땀과 습기에 강한 생활 방수 효과는 영구적이지 않으며 제품이 자연스럽게 마모됨에 따라 그 효과가 약해질 수 있습니다. AirPods(3세대) 및 AirPods Pro가 물에 젖어 있을 때 충전을 시도하지 마십시오. 청소 및 건조 방법은 https://support.apple.com/ko-kr/HT210711을 참고하십시오. AirPods Pro용 무선 충전 케이스 및 MagSafe 충전 케이스는 땀과 습기에 강한 생활 방수가 아닙니다.</li>
+                        <li>MagSafe 충전 기능을 사용하려면 호환되는 MagSafe 충전기가 필요합니다. 무선 충전 기능을 사용하려면 Qi 인증 무선 충전기가 필요합니다.</li>
+                        <li>배터리 사용 시간은 사용 패턴 및 설정에 따라 다를 수 있습니다. 자세한 내용은 apple.com/kr/batteries를 참고하십시오.</li>
+                    </ol>
+                </div>
+                <div class="con02">
+                    <div class="box01">
+                        <a href="" class="icon"><i class="fa-brands fa-apple"></i></a>
+                        <a href="">Airpods</a>
+                        <a href="">Airpods Max</a>
+                    </div>
+                    <div class="box02">
+                        <div class="list">
+                            <h3>쇼핑 및 알아보기</h3>
+                            <a href="">스토어</a>
+                            <a href="">Mac</a>
+                            <a href="">iPad</a>
+                            <a href="">iPhone</a>
+                            <a href="">Watch</a>
+                            <a href="">AirPods</a>
+                            <a href="">TV 및 홈</a>
+                            <a href="">AirTag</a>
+                            <a href="">액세사리</a>
+                        </div>
+                        <div class="list">
+                            <h3>서비스</h3>
+                            <a href="">Apple Music</a>
+                            <a href="">Apple TV+</a>
+                            <a href="">Apple Arcade</a>
+                            <a href="">iCloud</a>
+                            <a href="">Apple Books</a>
+                            <a href="">Apple Podcast</a>
+                            <a href="">App Store</a>
+                            <br>
+                            <h3>계정</h3>
+                            <a href="">Apple ID 관리</a>
+                            <a href="">Apple Store 계정</a>
+                            <a href="">iCloud.com</a>
+                        </div>
+                        <div class="list">
+                            <h3>Apple Store</h3>
+                            <a href="">매장 찾기</a>
+                            <a href="">Genius Bar</a>
+                            <a href="">Today at Apple</a>
+                            <a href="">Apple Store 앱</a>
+                            <a href="">리퍼 및 특가 제품</a>
+                            <a href="">금융 혜택</a>
+                            <a href="">Apple Trade in</a>
+                            <a href="">주문 상태</a>
+                            <a href="">쇼핑 도움말</a>
+                        </div>
+                        <div class="list">
+                            <h3>비즈니스</h3>
+                            <a href="">Apple과 비즈니스</a>
+                            <a href="">비즈니스를 위한 제품 쇼핑하기</a>
+                            <br>
+                            <h3>교육</h3>
+                            <a href="">Apple과 교육</a>
+                            <a href="">초중고용 제품 쇼핑하기</a>
+                            <a href="">대학 생활을 위한 제품 쇼핑하기</a>
+                        </div>
+                        <div class="list">
+                            <h3>애플의 가치관</h3>
+                            <a href="">손쉬운 사용</a>
+                            <a href="">환경</a>
+                            <a href="">개인정보 보호</a>
+                            <a href="">협력업체에 대한 책임</a>
+                            <br>
+                            <h3>Apple 정보</h3>
+                            <a href="">Newsroom</a>
+                            <a href="">Apple 리더십</a>
+                            <a href="">채용 안내</a>
+                            <a href="">윤리 및 규정 준수</a>
+                            <a href="">이벤트</a>
+                            <a href="">일자리 창출</a>
+                            <a href="">Apple 연락처</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="con03">
+                    <div class="box01">다양한 쇼핑 방법: <a href="">Apple Store를 방문</a>하거나, <a href="">리셀러</a>를 찾아보거나, 080-330-8877번으로 전화하세요.</div>
+                    <div class="box02">
+                        <p>Copyright © 2022 Apple Inc. 모든 권리 보유.</p>
+                        <ul>
+                            <li><a href="">개인정보 처리방침</a></li>
+                            <li><a href="">웹사이트 이용 약관</a></li>
+                            <li><a href="">판매 및 환불</a></li>
+                            <li><a href="">법적 고지</a></li>
+                            <li><a href="">사이트 맵</a></li>
+                        </ul>
+                        <a href="">대한민국</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
 
 
@@ -213,11 +379,5 @@
 
 
 
-    <script>
-
-        // gsap__scrolltrigger
-        gsap.registerPlugin(ScrollTrigger)
-
-    </script>
 </body>
 </html>

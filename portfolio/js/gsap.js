@@ -4,15 +4,14 @@ $(function(){
 
     // trigger
 
-    gsap.from('.sec2_big',{
+    gsap.from('.sec2_align',{
         scrollTrigger: {
             trigger: '.sec2_align',
             start: 'top 75%',
-            toggleActions: 'restart none none reverse'
         },
         y: 100,
         opacity: 0,
-        duration: 1.5,
+        duration: 1,
     })
 
     gsap.from('#sec3_work',{
