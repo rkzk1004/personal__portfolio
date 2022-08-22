@@ -44,7 +44,8 @@ $(function(){
 
 
     // header__search
-    $('header .align .btnbox .search').click(function(){
+    $('header .align .btnbox .search').click(function(e){
+        e.preventDefault()
         $('.search__wrap').toggleClass('on')
     })
 

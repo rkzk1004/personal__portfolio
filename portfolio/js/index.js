@@ -2,7 +2,7 @@ $(function(){
 
 
 
-    // intro_fade
+    // intro_fadeIn/Out
     setTimeout(function(){
         $('.intro').fadeIn(1300).delay(1000).fadeOut(1300)
     },800)
