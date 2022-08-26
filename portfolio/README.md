@@ -71,7 +71,7 @@
           .work .box{ position: relative; width: 1100px; height: 700px; margin: 150px auto; } // 컨텐츠
 ```
 ```javascript
-            let work_totalHeight = $('.work .box').outerWidth()*4.5 // 부모에게 컨텐츠의 
+            let work_totalHeight = $('.work .box').outerWidth()*4.5 // 부모에게 컨텐츠의 height, margin값을 모두 포함한 값만큼 height값 설정 (4.5만큼 곱해서 원하는 만큼의 높이값이 나오기위한 추가 설정)
 
             $('.work').css({
                 height: work_totalHeight
