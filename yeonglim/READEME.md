@@ -8,7 +8,7 @@
 
 # 해결방안
 
-1. 스크롤 방향에 따라 header가 나타나거나 사라지게 하기
+**1. 스크롤 방향에 따라 header가 나타나거나 사라지게 하기**
 - css에서 header에 scroll function에 필요한 clsss작성
 - scroll function 안에 addClass / removeClass 작성
 ```css
@@ -33,8 +33,8 @@
         }
     })
 ```
-<br>
-2. 슬라이드 영역에 마우스를 올리면 커서모양 변경
+
+**2. 슬라이드 영역에 마우스를 올리면 커서모양 변경**
 - 커서를 올릴 대상 객체에서 마우스 x, y좌표 반환
 - .cursor의 위치값을 가져온 x, y좌표로 설정
 - 대상 영역에 커서를 올렸을 때 addClass('on')
@@ -60,8 +60,8 @@
         $('.sec1 .swiper .btn .cursor').hide()  =>  대상 객체에 마우스를 올리면 cursor가 사라지게 하기
     })
 ```
-<br>
-3. gsap를 활용한 스크롤 애니메이션
+
+**3. gsap를 활용한 스크롤 애니메이션**
 - 필요한 gsap 문법으로 원하는 애니메이션 구현
 ```javascript
     gsap.from('.sec2',{  =>  실행대상
@@ -71,9 +71,8 @@
             toggleActions: 'restart none none reverse',  =>  구역에서 벗어나면 초기화 / 구역에 다시 들어가면 다시 실행
             // markers: true,
         },
-        y: 100,
+        y: 100,  =>  필요한 옵션
         opacity: 0,
         duration: 1,
     })
 ```
-<br>
