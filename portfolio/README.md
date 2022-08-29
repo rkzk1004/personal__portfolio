@@ -6,7 +6,7 @@
 # 해결방안
 **1. 메인페이지의 프로필사진 가운데에 고정**
 - 프로필사진 태그에 position: sticky, top: 50%, transform: translateY(-50%), margin: 0 auto 값을 주어 고정시킬 위치 설정
-- sticky 속성을 주기위해선 부모요소에 height값이 반드시 필요 -> 의 height값을 필요한 만큼 설정
+- sticky 속성을 주기위해선 부모요소에 height값이 반드시 필요 -> 부모의 height값을 필요한 만큼 설정
 ```html
         <section class="main" id="main"> // height값이 필요한 부모
             <img class="main_img" src="img/main/main1.png" alt="main"> // 여기가 프로필사진 부분
