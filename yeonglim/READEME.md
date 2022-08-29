@@ -63,6 +63,7 @@
 
 **3. gsap를 활용한 스크롤 애니메이션**
 - 필요한 gsap 문법으로 원하는 애니메이션 구현
+- gsap를 사용하기 전에 gsap.js, scrollTrigger.js를 html에서 연결해줘야한다.
 ```javascript
     gsap.from('.sec2',{  =>  실행대상
         scrollTrigger:{
