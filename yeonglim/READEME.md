@@ -20,7 +20,7 @@
 ```
 ```javascript
     $('body').on('mousewheel',function(e){
-        let wheel = e.originalEvent.wheelDelta
+        let wheel = e.originalEvent.wheelDelta  =>  마우스휠에 위로 갔는지 아래로 갔는지 전달받기위한 변수
 
         if(wheel > 0){
             // scroll up
