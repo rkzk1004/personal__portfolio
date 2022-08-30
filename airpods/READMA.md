@@ -82,7 +82,6 @@
                         </a>
                     </li>
                 </ul>
-            </div>
             <div class="slidecon">
                 <div class="slide">  =>  기본 슬라이드 (siema.js 사용)
                     <img src="img/content/product/white01.jpg" alt="slide">
