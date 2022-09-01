@@ -3,12 +3,12 @@ $(function(){
 
 
     // intro_fadeIn/Out
-    // setTimeout(function(){
-    //     $('.intro').fadeIn(1300).delay(1000).fadeOut(1300)
-    // },800)
-    // setTimeout(function(){
-    //     $('.wrap').addClass('on')
-    // },4300)
+    setTimeout(function(){
+        $('.intro').fadeIn(1300).delay(1000).fadeOut(1300)
+    },800)
+    setTimeout(function(){
+        $('.wrap').addClass('on')
+    },4300)
 
 
 
