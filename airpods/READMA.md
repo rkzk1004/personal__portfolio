@@ -1,3 +1,7 @@
+# AIRPODS MAX
+> airpods max 공식 홈페이지를 클론 코딩한 웹사이트 입니다.<br>언어는 html, css, jquery를 사용하였고 모션효과는 gsap 라이브러리를 사용하였습니다.
+
+
 # 이슈사항
 1. 스크롤을 일정량이상 내리면 header를 scrollTop에 고정
 2. 버튼하나로 slide / fade 기능 동시에 구현
