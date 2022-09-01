@@ -18,6 +18,12 @@
     .work .box .hover .hover_text h3{ font-size: 30px; margin-bottom: 20px; letter-spacing: -1px; }
     .work .box .hover .hover_text p{ font-size: 17px; font-weight: 500; margin-bottom: 50px; }
     .work .box .hover .hover_text a{ position: relative; font-size: 17px; }
+    .work .box .hover .hover_text p{ font-size: 19px; font-weight: 500; margin-bottom: 10px; }
+    .work .box .hover .hover_text p:nth-child(3){ font-size: 17px; color: rgba(0,0,0,.8); margin-bottom: 60px; }
+    .work .box .hover .hover_text p:nth-child(3) span{ margin-right: 10px; }
+    .work .box .hover .hover_text a{ position: relative; font-size: 17px; }
+    .work .box .hover .hover_text a:nth-child(4){ margin-right: 20px; }
+
 }
 
 
@@ -51,8 +57,11 @@
     .work .box{ width: 800px; height: 480px; }
     .work .box .hover .hover_text{ text-align: center; }
     .work .box .hover .hover_text h3{ font-size: 24px; margin-bottom: 20px; letter-spacing: -1px; }
-    .work .box .hover .hover_text p{ font-size: 15px; font-weight: 500; margin-bottom: 50px; }
+    .work .box .hover .hover_text p{ font-size: 15px; font-weight: 500; margin-bottom: 8px; }
+    .work .box .hover .hover_text p:nth-child(3){ font-size: 14px; color: rgba(0,0,0,.8); margin-bottom: 60px; }
+    .work .box .hover .hover_text p:nth-child(3) span{ margin-right: 10px; }
     .work .box .hover .hover_text a{ position: relative; font-size: 15px; }
+    .work .box .hover .hover_text a:nth-child(4){ margin-right: 20px; }
 
     /* footer */
     footer{padding: 150px 0 25px 0; }
@@ -93,8 +102,11 @@
     .work .box{ width: 800px; height: 480px; }
     .work .box .hover .hover_text{ text-align: center; }
     .work .box .hover .hover_text h3{ font-size: 24px; margin-bottom: 20px; letter-spacing: -1px; }
-    .work .box .hover .hover_text p{ font-size: 15px; font-weight: 500; margin-bottom: 50px; }
-    .work .box .hover .hover_text a{ position: relative; font-size: 15px; }
+    .work .box .hover .hover_text p{ font-size: 15px; font-weight: 500; margin-bottom: 8px; }
+    .work .box .hover .hover_text p:nth-child(3){ font-size: 14px; color: rgba(0,0,0,.8); margin-bottom: 60px; }
+    .work .box .hover .hover_text p:nth-child(3) span{ margin-right: 10px; }
+    .work .box .hover .hover_text a{ position: relative; font-size: 14px; }
+    .work .box .hover .hover_text a:nth-child(4){ margin-right: 15px; }
 
     /* footer */
     footer{padding: 150px 0 25px 0; }
@@ -142,13 +154,13 @@
     .info .box.talk h1{ font-size: 25px; margin-bottom: 50px; }
     .info .box.skill{ width: 90%; margin: 0 auto; }
     .info .box.skill h1{ font-size: 30px; margin-bottom: 70px; }
-    .info .box.skill div{ font-size: 23px; font-weight: 400; margin-bottom: 50px; }
-    .info .box.skill div p{ font-size: 22px; color: rgba(255,255,255,.4); margin-bottom: 10px; }
-    .info .box.skill div:last-child span{ font-size: 19px; margin-bottom: 15px; }
+    .info .box.skill div{ font-size: 17px; font-weight: 400; margin-bottom: 50px; }
+    .info .box.skill div p{ font-size: 17px; color: rgba(255,255,255,.4); margin-bottom: 10px; }
+    .info .box.skill div:last-child span{ font-size: 15px; margin-bottom: 15px; }
          
     /* work */
     .work{ position: relative; width: 100%; box-sizing: border-box; padding-top: 0; }
-    .work img{ margin: 0 auto; width: 98%; height: auto; }
+    .work img{ margin: 0 auto; width: 98%; height: auto; margin-bottom: 30px; }
     .work .box{ position: relative; width: 97%; height: 240px; margin: 70px auto; }
     .work .box:nth-child(2){ margin: 0 auto; }
     .work .box:hover .hover{ opacity: 1; }
@@ -157,12 +169,13 @@
     .work .box .hover .hover_text{ text-align: center; }
     .work .box .hover .hover_text h3{ font-size: 25px; margin-bottom: 10px; letter-spacing: -1px; }
     .work .box .hover .hover_text p{ width: 90%; margin: 0 auto; margin-bottom: 30px; font-size: 17px; font-weight: 500; }
+    .work .box .hover .hover_text p:nth-child(3){ display: none; }
     .work .box .hover .hover_text a{ position: relative; font-size: 19px; }
     .work .box .hover .hover_text a:hover::after{ width: 100%; }
     .work .box .hover .hover_text a::after{ content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 1px; background-color: #000; transition: all .3s; }
         
     /* footer */
-    footer{ width: 100%; padding: 150px 0 40px 0; text-align: center; }
+    footer{ width: 100%; padding: 0 0 40px 0; text-align: center; }
     footer img{ width: 70px; height: auto; margin: 0 auto; transition: all .1s; }
     footer img:hover{ transform: scale(0.9); }
     footer p{ font-size: 17px; margin-top: 2px; }
