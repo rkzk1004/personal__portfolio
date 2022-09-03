@@ -1,6 +1,6 @@
  /* intro */
 .intro{ display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background-color: #fff; z-index: 3; }
-.intro h1{ font-size: 60px; text-align: center; line-height: 100vh; pointer-events: none; }
+.intro h1{ font-size: 40px; text-align: center; line-height: 100vh; pointer-events: none; }
 
  
  
@@ -16,6 +16,7 @@ body.on{ background-color: #000; }
 body.on .corner{ color: #fff; }
 body.on .corner a{ color: #fff; }
 body.on .main div.main_fff{ opacity: 1; }
+body.on .info .skill div p span{ opacity: 1; }
 body.on .mobile_btn .btn div{ background-color: #fff; }
 
 
@@ -53,9 +54,10 @@ body.on .mobile_btn .btn div{ background-color: #fff; }
 .info .box.talk h1{ font-size: 60px; margin-bottom: 50px; }
 .info .box.talk h1 span{ color: rgba(255,255,255,.4) }
 .info .box.skill{ width: 100%; height: auto; padding-bottom: 150px; text-align: center; }
-.info .box.skill h1{ font-size: 50px; margin-bottom: 70px; }
 .info .box.skill div{ font-size: 30px; font-weight: 400; margin-bottom: 50px; }
 .info .box.skill div p{ font-size: 22px; color: rgba(255,255,255,.4); margin-bottom: 10px; }
+.info .box.skill div p:hover{ color: rgba(255,255,255,1); }
+.info .box.skill div p span{ opacity: 0; }
 .info .box.skill div span{ margin-right: 15px; }
 .info .box.skill div span:last-child{ margin-right: 0; }
 .info .box.skill div:last-child span{ font-size: 20px; margin-bottom: 15px; }
@@ -70,9 +72,11 @@ body.on .mobile_btn .btn div{ background-color: #fff; }
 .work .box video{ width: 100%; height: 100%; object-fit: cover; }
 .work .box .hover{ position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255,255,255,.2); backdrop-filter: blur(10px); display: flex; align-items: center; justify-content: center; opacity: 0; transition: all .3s; }
 .work .box .hover .hover_text{ text-align: center; }
-.work .box .hover .hover_text h3{ font-size: 35px; margin-bottom: 20px; letter-spacing: -1px; }
-.work .box .hover .hover_text p{ font-size: 19px; font-weight: 500; margin-bottom: 50px; }
-.work .box .hover .hover_text a{ position: relative; font-size: 19px; }
+.work .box .hover .hover_text h3{ font-size: 35px; margin-bottom: 40px; letter-spacing: -1px; }
+.work .box .hover .hover_text p{ font-size: 19px; font-weight: 500; margin-bottom: 10px; }
+.work .box .hover .hover_text p:nth-child(3){ font-size: 17px; color: rgba(0,0,0,.8); margin-bottom: 60px; }
+.work .box .hover .hover_text p:nth-child(3) span{ margin-right: 10px; }
+.work .box .hover .hover_text a{ position: relative; font-size: 17px; margin: 0 20px; }
 .work .box .hover .hover_text a:hover::after{ width: 100%; }
 .work .box .hover .hover_text a::after{ content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 1px; background-color: #000; transition: all .3s; }
     
@@ -80,7 +84,7 @@ body.on .mobile_btn .btn div{ background-color: #fff; }
     
 /* footer */
 footer{ width: 100%; padding: 150px 0 40px 0; text-align: center; }
-footer img{ width: 80px; height: auto; margin: 0 auto; transition: all .1s; }
+footer img{ width: 65px; height: auto; margin: 0 auto; transition: all .1s; }
 footer img:hover{ transform: scale(0.9); }
 footer p{ font-size: 19px; margin-top: 2px; }
 footer p:nth-child(2){ margin-top: 40px; }

@@ -54,11 +54,9 @@ $(function(){
 
 
     // work__height
-    let work_totalHeight = $('.work .box').outerWidth()*4.5
+    let work_totalHeight = $('.work .box').innerWidth()
     
-    $('.work').css({
-        height: work_totalHeight
-    })
+    $('.work').css({ height: work_totalHeight * 4.5 })
 
 
 
