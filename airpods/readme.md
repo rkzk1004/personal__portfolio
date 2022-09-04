@@ -108,7 +108,7 @@
 
     // siema.js  =>  siema.js를 다운받아 html에서 연결해야 사용가능
     let sec6_slide = new Siema({
-        selector: '.sec6 .slidecon .slide',  =>  슬라이드 기능이 필요한 요소(다른 slide 라이브러리들과는 달리 -webkit-box나 position: absolute같은 css가 필요없다.
+        selector: '.sec6 .slidecon .slide',  =>  슬라이드 기능이 필요한 selector (다른 slide 라이브러리들과는 달리 -webkit-box나 position: absolute같은 css가 필요없다.)
         draggable: false,  =>  마우스로 드래그못하게
         duration: 500,  =>  슬라이드 한 번에 0.5초
     })
